@@ -1,0 +1,15 @@
+/* Ordered Lists in pages and announcements
+- indent level 2 gets prefix a,b,c , level 3 gets i,ii,iii and 4 gets 01,02,03
+- The result is not visible in mce editor, but after you save page or announcement
+- USN - 16.01.2019 - Sven K. Haaø
+- sven.k.haao@usn.no
+ */
+.ic-app-main-content ol ol {
+  list-style-type: lower-alpha;
+}
+.ic-app-main-content ol ol ol {
+  list-style-type: lower-roman;
+}
+.ic-app-main-content ol ol ol ol {
+  list-style-type: decimal-leading-zero;
+}
